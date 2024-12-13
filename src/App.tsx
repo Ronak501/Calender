@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+  import { useState, useEffect } from "react";
 import { Button } from "./components/ui/button";
 import { Input } from "./components/ui/input";
 import { Label } from "./components/ui/label";
@@ -96,7 +96,7 @@ function EventCalendar() {
   const firstDayOfMonth = getFirstDayOfMonth(year, month);
 
   return (
-    <div className="max-w-4xl mx-auto p-4 ">
+    <div className="max-w-4xl mx-auto p-4">
       <div className="flex justify-between mb-4">
         <Button onClick={handlePreviousMonth}>Previous</Button>
         <h2 className="text-lg font-bold">
@@ -190,34 +190,28 @@ function EventCalendar() {
           id="name"
           value={newEvent.name}
           onChange={(e) => setNewEvent({ ...newEvent, name: e.target.value })}
-          className="border-2 border-gray-300 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none"
+          style={{ backgroundColor: 'black' }}
         />
         <Label htmlFor="startTime">Start Time:</Label>
         <Input
           id="startTime"
           value={newEvent.startTime}
-          onChange={(e) =>
-            setNewEvent({ ...newEvent, startTime: e.target.value })
-          }
-          className="border-2 border-gray-300 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none"
+          onChange={(e) => setNewEvent({ ...newEvent, startTime: e.target.value })}
+          style={{ backgroundColor: 'black' }}
         />
         <Label htmlFor="endTime">End Time:</Label>
         <Input
           id="endTime"
           value={newEvent.endTime}
-          onChange={(e) =>
-            setNewEvent({ ...newEvent, endTime: e.target.value })
-          }
-          className="border-2 border-gray-300 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none"
+          onChange={(e) => setNewEvent({ ...newEvent, endTime: e.target.value })}
+          style={{ backgroundColor: 'black' }}
         />
         <Label htmlFor="description">Description:</Label>
         <Textarea
           id="description"
           value={newEvent.description}
-          onChange={(e) =>
-            setNewEvent({ ...newEvent, description: e.target.value })
-          }
-          className="border-2 border-gray-300 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none"
+          onChange={(e) => setNewEvent({ ...newEvent, description: e.target.value })}
+          style={{ backgroundColor: 'black' }}
         />
         <Button onClick={handleAddEvent} className="mt-4">Add Event</Button>
       </form>
