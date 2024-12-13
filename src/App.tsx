@@ -5,13 +5,13 @@ import { Label } from "./components/ui/label";
 import { Textarea } from "./components/ui/textarea";
 
 const daysOfWeek = [
-  "Sunday",
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday",
+  "Sun",
+  "Mon",
+  "Tue",
+  "Wed",
+  "Thu",
+  "Fri",
+  "Sat",
 ];
 
 function getDaysInMonth(year: number, month: number): number {
