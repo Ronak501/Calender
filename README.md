@@ -1,50 +1,74 @@
 # React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Dynamic Event Calendar Application
 
-Currently, two official plugins are available:
+## Summary of Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The **Dynamic Event Calendar Application** is a robust and interactive calendar tool designed to help users manage events efficiently. Below are the key features:
 
-## Expanding the ESLint configuration
+### Core Features
+- **Calendar View**:
+  - Displays a monthly calendar grid with proper alignment for days.
+  - Allows navigation between months using "Previous" and "Next" buttons.
+- **Event Management**:
+  - Add, edit, or delete events for any selected day.
+  - Events include details like name, start time, end time, and an optional description.
+  - Prevents overlapping events to ensure scheduling accuracy.
+- **Event List**:
+  - Shows all events for the selected day in a modal or side panel.
+- **Data Persistence**:
+  - Events are saved using **localStorage** to ensure they persist across page refreshes.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Advanced Features
+- **Responsive UI**:
+  - Clean and modern design built with **shadcn/ui**.
+  - Highlights the current day and selected day visually.
+  - Differentiates weekends and weekdays for better usability.
+- **Complex Logic**:
+  - Handles month transitions seamlessly (e.g., from Jan 31 to Feb 1).
+  - Allows filtering of events by keywords.
 
-- Configure the top-level `parserOptions` property like this:
+### Bonus Features
+- Drag-and-drop functionality to reschedule events between days.
+- Color-coded events based on categories (e.g., Work, Personal, Others).
+- Export event data for a specific month as **JSON** or **CSV**.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+---
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Instructions to Run the App Locally
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+### Prerequisites
+- Ensure **Node.js** and **npm** are installed on your system.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+### Steps to Run
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/your-username/dynamic-event-calendar.git
+   cd dynamic-event-calendar
+   ```
+
+2. **Install Dependencies**:
+   ```bash
+   npm install
+   ```
+
+3. **Start the Development Server**:
+   ```bash
+   npm start
+   ```
+
+4. **Access the Application**:
+   Open your browser and navigate to `http://localhost:3000` to view the app.
+
+---
+
+## Deployment
+
+The application is deployed for easy access. You can try it out here: [Live Demo Link](https://your-deployment-link.vercel.app).
+
+---
+
+## Contribution
+
+Contributions are welcome! If you have ideas or improvements, feel free to fork the repository, make changes, and submit a pull request.
