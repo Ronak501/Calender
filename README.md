@@ -69,7 +69,7 @@ The **Dynamic Event Calendar Application** is a robust and interactive calendar 
 
 ## Deployment
 
-The application is deployed for easy access. You can try it out here: [Live Demo Link](https://your-deployment-link.vercel.app).
+The application is deployed for easy access. You can try it out here: [Live Demo Link](https://calender-lake.vercel.app/).
 
 ---
 
