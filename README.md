@@ -34,7 +34,11 @@ The **Dynamic Event Calendar Application** is a robust and interactive calendar 
 - Export event data for a specific month as **JSON** or **CSV**.
 
 ---
+## Screenshots
+![image](https://github.com/user-attachments/assets/58511fea-3cc7-4d28-9944-e8693464a4c3)
+![image](https://github.com/user-attachments/assets/6f3484af-9f31-465b-a785-7c668a0563c8)
 
+---
 ## Instructions to Run the App Locally
 
 ### Prerequisites
