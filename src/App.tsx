@@ -190,6 +190,7 @@ function EventCalendar() {
           id="name"
           value={newEvent.name}
           onChange={(e) => setNewEvent({ ...newEvent, name: e.target.value })}
+          className="border-2 border-gray-300 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none"
         />
         <Label htmlFor="startTime">Start Time:</Label>
         <Input
@@ -198,6 +199,7 @@ function EventCalendar() {
           onChange={(e) =>
             setNewEvent({ ...newEvent, startTime: e.target.value })
           }
+          className="border-2 border-gray-300 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none"
         />
         <Label htmlFor="endTime">End Time:</Label>
         <Input
@@ -206,6 +208,7 @@ function EventCalendar() {
           onChange={(e) =>
             setNewEvent({ ...newEvent, endTime: e.target.value })
           }
+          className="border-2 border-gray-300 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none"
         />
         <Label htmlFor="description">Description:</Label>
         <Textarea
@@ -214,6 +217,7 @@ function EventCalendar() {
           onChange={(e) =>
             setNewEvent({ ...newEvent, description: e.target.value })
           }
+          className="border-2 border-gray-300 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none"
         />
         <Button onClick={handleAddEvent} className="mt-4">Add Event</Button>
       </form>
